@@ -42,7 +42,7 @@ logo = "images/rice.svg"
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/zk-lab/zk-lab.dev"
+url = "https://github.com/orgs/zk-soft/repositories"
 
 [[params.socialLinks]]
 icon = "fa-solid fa-envelope"
