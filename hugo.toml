@@ -1,0 +1,88 @@
+baseURL = 'https://zk-soft.dev/'
+title = 'ZK Software Lab Ltd.'
+
+copyright = "© [ZK Software Lab Limited](https://zk-soft.dev) & [Joe Roe](https://joeroe.io) & [risotto contributors](https://github.com/joeroe/risotto/graphs/contributors)."
+
+theme = "risotto"
+
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# Automatically add content sections to main menu
+sectionPagesMenu = "main"
+
+[params]
+noindex = false
+
+[params.theme]
+palette = "base16-dark"
+
+# Sidebar: about
+[params.about]
+title = "About Us"
+description = "Explore more about ZK Software Lab."
+logo = "images/rice.svg"
+
+# Sidebar: social links
+# Available icon sets:
+# * FontAwesome 6 <https://fontawesome.com/> ('fa-brands', 'fa-normal', or 'fa-solid' for brands)
+# * Academicons <https://jpswalsh.github.io/academicons> ('ai ai-')
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/zk-lab/zk-lab.dev"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:info@zk-soft.dev"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "team"
+    name = "Team"
+    url = "/team/"
+    weight = 11
+
+  [[menu.main]]
+    identifier = "expertize"
+    name = "Expertise"
+    url = "/expertize/"
+    weight = 12
+
+  [[menu.main]]
+    identifier = "faq"
+    name = "F.A.Q"
+    url = "/faq/"
+    weight = 13
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# For hugo >= 0.60.0, enable inline HTML
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup]
+
+  # Table of contents
+  # Add toc = true to content front matter to enable
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = true
