@@ -16,6 +16,12 @@ ignoreErrors = ["error-remote-getjson"]
 # Automatically add content sections to main menu
 sectionPagesMenu = "main"
 
+
+
+[module]
+[[module.imports]]
+    path = 'risotto'
+
 [params]
 noindex = false
 
